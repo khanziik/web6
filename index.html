@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My jQuery Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- task 1 selectors and css -->
+    <header class="profile-section">
+        <h1 id="main-title">Welcome to my portfolio</h1>
+        <h2 class="headline">Hello, I'm Khanzere</h2>
+        <p id="introduction"> I am an IT student. </p>
+
+        <button id="update-greeting">Update greeting</button>
+        <button id="light-theme">Light theme</button>
+        <button id="dark-theme">Dark theme</button>
+    </header>
+
+    <main>
+        <!--task 2 visibility -->
+        <section class="section" id="about">
+            <h2>About Me</h2>
+            <p> I am mproving my web development skills. </p>
+            <p id="status">Learning jQuery.</p>
+
+            <div id="fun-facts">
+                <p>Fact 1: I like to sleep so much.</p>
+                <p>Fact 2: I like music and movies.</p>
+                <p>Fact 3: I have a cat.</p>
+            </div>
+
+            <button id="hide-status">Hide</button>
+            <button id="show-status">Show</button>
+            <button id="toggle-status">Toggle</button>
+        </section>
+
+        <!--task 3 fade -->
+        <section class="section" id="gallery">
+            <h2>My Gallery</h2>
+
+            <div class="gallery-images">
+                <img class="gallery-image" src="images/music1jpg.jpg" alt=" image 1" >
+                <img class="gallery-image" src="images/music2.jpg" alt="Music performance" >
+            </div>
+
+            <button id="fade-in">Fade in</button>
+            <button id="fade-out">Fade out</button>
+            <button id="fade-toggle">Fade toggle</button>
+        </section>
+
+        <!--task 4 slide -->
+        <section class="section" id="favorites">
+            <h2>My Favorites</h2>
+
+            <h3 class="slide-heading">My Favorite Music</h3>
+            <div class="slide-panel">
+                <p>I enjoy listening to music while studying.</p>
+            </div>
+
+            <h3 class="slide-heading">My Favorite Movie</h3>
+            <div class="slide-panel">
+                <p>I love films with unexpected twists.</p>
+            </div>
+
+            <h3 class="slide-heading">My Favorite Subject</h3>
+            <div class="slide-panel">
+                <p>My favorite subject is related to computers.</p>
+            </div>
+
+            <button id="open-panels">Show all</button>
+            <button id="close-panels">Hide all</button>
+        </section>
+
+        <!--task 5 add and remove -->
+        <section class="section" id="skills">
+            <h2>Technical skills</h2>
+
+            <ul id="skill-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+            </ul>
+
+            <label for="skill-input">New skill:</label>
+            <input type="text" id="skill-input" placeholder="Enter a skill">
+
+            <button id="add-skill">Add Skill</button>
+            <button id="prepend-skill">Prepend skill</button>
+            <button id="remove-skill">Remove skill</button>
+
+            <!-- task 8 basic animation -->
+            <h3>Skill Levels</h3>
+
+            <div class="skill-bar-row">
+                <p>HTML</p>
+                <div class="skill-track">
+                    <div class="skill-bar" data-width="80%"></div>
+                </div>
+            </div>
+
+            <div class="skill-bar-row">
+                <p>CSS</p>
+                <div class="skill-track">
+                    <div class="skill-bar" data-width="65%"></div>
+                </div>
+            </div>
+
+            <div class="skill-bar-row">
+                <p>JavaScript</p>
+                <div class="skill-track">
+                    <div class="skill-bar" data-width="45%"></div>
+                </div>
+            </div>
+
+            <button id="animate-skills">Animate My Skills</button>
+        </section>
+
+        <!-- task 6 modifying attributes -->
+        <section class="section" id="social">
+            <h2>My Social Link</h2>
+
+            <p>
+                <a
+                    id="social-link"
+                    href="https://github.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >Visit GitHub</a>
+            </p>
+
+            <button id="change-link">Change Link Destination</button>
+        </section>
+
+        <!-- task 7 form interaction -->
+        <section class="section" id="contact">
+            <h2>Live form</h2>
+
+            <form id="live-form">
+                <label for="visitor-name">Name:</label>
+                <input
+                    type="text"
+                    id="visitor-name"
+                    placeholder="Enter your name"
+                >
+
+                <label for="visitor-email">Email:</label>
+                <input
+                    type="email"
+                    id="visitor-email"
+                    placeholder="Enter your email"
+                >
+            </form>
+
+            <div class="live-output">
+                <p>Name: <span id="name-output"></span></p>
+                <p>Email: <span id="email-output"></span></p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>My jQuery Portfolio Assignment #6</p>
+    </footer>
+
+</body>
+</html>
