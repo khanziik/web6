@@ -2,6 +2,8 @@
 **Name:** Suleimen Khanzere
 **Group:** IT-2504
 
+https://khanziik.github.io/web6/
+
 ## Task 0. Setup
 - Included jQuery from a CDN.
 - Used `$(document).ready(function() { ... })`.
